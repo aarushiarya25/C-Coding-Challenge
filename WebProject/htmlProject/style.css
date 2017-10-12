@@ -1,0 +1,126 @@
+body {
+  font-family: "proxima-nova-soft",sans-serif;
+}
+
+$red:         #E48482;
+$green:       #73BFA2;
+$purple:      #848FC1;
+$lime_green:  #BEEA75;
+$pink:        #E4899E;
+$orange:      #EBA870;
+$yellow:      #E0DB79;
+$blue:        #8DABCF;
+$white:       #FFFFFF;
+
+.post {
+  width: 50%;
+  float: left;
+  min-height: 400px;
+  color: $white;
+  display: table;
+  .inner {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 15%;
+  }
+  .title {
+    font-size: 2em;
+  }
+  .post_info {
+    .date, .read_length {
+      display: inline;
+      font-size: 1.25em;
+    }
+    .date {
+      margin-right: 1em;
+    }
+  }
+}
+.red {
+  background: $red;
+  .post_info {
+    .date {
+      color: #A25F5E;
+    }
+    .read_length {
+      color: #F8B4B2;
+    }
+  }
+}
+.green {
+  background: $green;
+  .post_info {
+    .date {
+      color: #51967B;
+    }
+    .read_length {
+      color: #94DFC2;
+    }
+  }  
+}
+.purple {
+  background: $purple;
+  .post_info {
+    .date {
+      color: #5A648F;
+    }
+    .read_length {
+      color: #A5B1E2;
+    }
+  }
+}
+.lime_green {
+  background: $lime_green;
+  .post_info {
+    .date {
+      color: #8EB44E;
+    }
+    .read_length {
+      color: #E8FEC3;
+    }
+  }
+}
+.pink {
+  background: $pink;
+  .post_info {
+    .date {
+      color: #CD5E78;
+    }
+    .read_length {
+      color: #FDB6C6;
+    }
+  }
+}
+.orange {
+  background: $orange;
+  .post_info {
+    .date {
+      color: #B87F4E;
+    }
+    .read_length {
+      color: #FEC393;
+    }
+  }
+}
+.yellow {
+  background: $yellow;
+  .post_info {
+    .date {
+      color: #A4A04C;
+    }
+    .read_length {
+      color: #FDF9A6;
+    }
+  }
+}
+.blue {
+  background: $blue;
+  .post_info {
+    .date {
+      color: #6582A5;
+    }
+    .read_length {
+      color: #AECBED;
+    }
+  }
+}
