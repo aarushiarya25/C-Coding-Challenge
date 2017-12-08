@@ -1,0 +1,17 @@
+class Solution {
+public:
+    int lengthOfLongestSubstring(string s) {
+        int g=0;
+        std::string str="";
+        for(std::string::iterator it = s.begin(); it != s.end(); ++it) {
+            std::size_t found = str.find(*it);
+            if (found!=std::string::npos)
+             str.erase(str.begin(),str.begin()+found+1);
+            
+            str.push_back(*it);
+            if(str.size()>g)
+                g=str.size();
+        }
+        return g;
+    }
+};
